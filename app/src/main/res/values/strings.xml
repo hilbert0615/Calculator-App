@@ -1,6 +1,6 @@
-<string>
+<resources>
     <string name="app_name">lab2</string>
     <string name="button_demo">Button Demo</string>
     <string name="submit">Submit</string>
     <string name="enter_text_here">Exter Text Here</string>
-</string>
+</resources>
