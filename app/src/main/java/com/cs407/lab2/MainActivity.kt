@@ -1,5 +1,6 @@
 package com.cs407.lab2
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
@@ -26,7 +27,11 @@ class MainActivity : AppCompatActivity() {
         submitButton.setOnClickListener {
             val userInput = editText.text.toString()
 //            Log.i("INFO", "Button Clicked!");
-            Toast.makeText(this, userInput, Toast.LENGTH_SHORT).show()
+//            Toast.makeText(this, userInput, Toast.LENGTH_SHORT).show()
+
+            val intent = Intent(this, CalculatorActivity::class.java)
+            intent.putExtra("EXTRA_MESSAGE", userInput)
+            startActivity(intent)
         }
     }
 }
